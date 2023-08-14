@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/admin/style.css" />
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+     input,textarea{
+    width: 100%;
+
+    }
+    form{
+      margin: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus"></i>
+        <span class="logo_name">TMS</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/admin/dashboard" class="active">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/c_package">
+            <i class="bx bx-box"></i>
+            <span class="links_name">Create  Package</span>
+          </a>
+        </li>
+        <li>
+          <a href="/admin/m_package">
+            <i class="bx bx-list-ul"></i>
+            <span class="links_name">Package list</span>
+          </a>
+        </li>
+        <li>
+          <a href="/admin/m_cbooking">
+            <i class="bx bx-book-alt"></i>
+            <span class="links_name">Cutome Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="/admin/m_enquiries">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Enquiries</span>
+          </a>
+        </li>
+   
+        <li>
+          <a href="/admin/m_user">
+            <i class="bx bx-user"></i>
+            <span class="links_name">User</span>
+          </a>
+        </li>
+        <li>
+          <a href="/admin/m_admin">
+            <i class="bx bx-user"></i>
+            <span class="links_name">admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-message"></i>
+            <span class="links_name">Feedback</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Subscribe</span>
+          </a>
+        </li>
+       
+      
+       
+        <li class="log_out">
+          <a href="/a_login">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Create Tour Package</span>
+        </div>
+      
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Prem Shahi</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="container">
+     
+     
+    
+    <form  method="post"  class="form-horizontal " enctype="multipart/form-data"  >
+                <div class="form-group">
+                  <label for="focusedinput" class="col-sm-2 control-label">Package Name</label><br>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control1" name="pname" id="packagename" placeholder="Create Package" required>
+                  </div>
+                </div>
+                                <div class="form-group">
+                  <label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control1" name="ptype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" required>
+                  </div>
+                </div>
+
+                                <div class="form-group">
+                  <label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control1" name="plocation" id="packagelocation" placeholder=" Package Location" required>
+                  </div>
+                </div>
+
+                                <div class="form-group">
+                  <label for="focusedinput" class="col-sm-2 control-label">Package Price </label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control1" name="pprice" id="packageprice" placeholder=" Package Price " required>
+                  </div>
+                </div>
+
+                                <div class="form-group">
+                  <label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control1" name="pfeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
+                  </div>
+                </div>    
+
+
+                                <div class="form-group">
+                  <label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+                  <div class="col-sm-8">
+                    <textarea class="form-control" rows="5" cols="50" name="pdetails" id="packagedetails" placeholder="Package Details" required></textarea> 
+                  </div>
+                </div>    
+                <br>                                              
+               
+                <input type="file" id="myFile" name="filename">
+                <div class="row">
+                          <div class="col-sm-8 col-sm-offset-2">
+                            <br>
+                            <button type="submit" name="submit" class="btn-primary btn">Create</button>
+
+                            <button type="reset" class="btn-inverse btn">Reset</button>
+                          </div>
+    </div>
+            
+          
+            
+            
+            
+          </div>
+          
+          </form>
+
+
+     
+    </div>
+  </div>
+
+</div>
+    
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      };
+    </script>
+  </body>
+</html>
